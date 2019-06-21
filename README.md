@@ -1,5 +1,6 @@
 # Ajax-OMDB
 Play the game at at https://soheila-lotfi.github.io/Ajax-OMDB/
+
 By:
 
 Soheila Lotfi
