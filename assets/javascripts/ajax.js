@@ -4,7 +4,7 @@ var movieTitle;
 
 // when user clicks the submit button, we take the input value which is the movies name
 $("#submitbtn").click(function(){
-    movieTitle=$("#movie-title").val();
+    movieTitle=$("#movie-title").val().trim();    // trim method cleans the user's input-removes white sapce before and after the text but preserves white space between
 
 // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
 //Make sure you switch the protocol in the query URL from **`http to https`**, or the app may not work properly4
