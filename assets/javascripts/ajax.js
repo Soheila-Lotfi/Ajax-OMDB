@@ -7,7 +7,10 @@ $("#submitbtn").click(function(){
     movieTitle=$("#movie-title").val();
 
 // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
-    var queryUrl="http://www.omdbapi.com/?t="+movieTitle+"&apikey=trilogy";
+//Make sure you switch the protocol in the query URL from **`http to https`**, or the app may not work properly4
+   //when deployed to Github Pages.
+
+    var queryUrl="https://www.omdbapi.com/?t="+movieTitle+"&apikey=trilogy";
 
 // with ajax we get the data from API provided with omdb website
     $.ajax({
